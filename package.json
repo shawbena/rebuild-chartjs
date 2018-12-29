@@ -1,5 +1,5 @@
 {
-  "_from": "chart.js",
+  "_from": "chart-js",
   "_inBundle": false,
   "_integrity": "sha512-3+7k/DbR92m6BsMUYP6M0dMsMVZpMnwkUyNSAbqolHKsbIzH2Q4LWVEHHYq7v0fmEV8whXE0DrjANulw9j2K5g==",
   "_location": "/chart.js",
@@ -27,8 +27,10 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "chart.js": "^2.7.3",
     "chartjs-color": "^2.1.0",
-    "moment": "^2.10.2"
+    "moment": "^2.10.2",
+    "webpack": "^4.28.3"
   },
   "deprecated": false,
   "description": "Simple HTML5 charts using the canvas element.",
@@ -68,12 +70,13 @@
     "pixelmatch": "^4.0.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0",
+    "webpack-cli": "^3.1.2",
     "yargs": "^9.0.1"
   },
   "homepage": "http://www.chartjs.org",
   "license": "MIT",
   "main": "src/chart.js",
-  "name": "chart.js",
+  "name": "chart-js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chartjs/Chart.js.git"
@@ -87,6 +90,8 @@
     "test": "test"
   },
   "scripts": {
+    "gulp": "gulp build",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

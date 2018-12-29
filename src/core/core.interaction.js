@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 var helpers = require('../helpers/index');
 
@@ -149,7 +149,7 @@ function indexMode(chart, e, options) {
  * Contains interaction related functions
  * @namespace Chart.Interaction
  */
-const Interaction = {
+module.exports = {
 	// Helper function for different modes
 	modes: {
 		single: function(chart, e) {
@@ -328,5 +328,3 @@ const Interaction = {
 		}
 	}
 };
-
-export default Interaction

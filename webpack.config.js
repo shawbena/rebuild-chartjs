@@ -1,11 +1,11 @@
 const path = require("path")
 module.exports =[ {
-    devtool: 'cheap-source-map',
-    entry: path.resolve(__dirname,'../chart.js/src/chart.js'),
-    mode: 'production',
+    devtool: 'cheap-module-source-map',
+    entry: path.resolve(__dirname,'src/chart.js'),
+    mode: 'development',
     output: {
-        path: path.resolve(__dirname, '../dist'),
-        filename: 'chart.js',
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'Chart.bundle.js',
         library: 'Chart',
         libraryTarget: 'umd',
     }

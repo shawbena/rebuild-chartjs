@@ -1,14 +1,12 @@
 /**
  * @namespace Chart
  */
-
-// var Chart = require('./core/core')();
-var Chart = require('./core/chart')
+var Chart = require('./core');
 
 Chart.helpers = require('./helpers/index');
 
 // @todo dispatch these helpers into appropriated helpers/helpers.* file and write unit tests!
-require('./core/core.helpers')(Chart);
+require('./core/core.helpers');
 
 Chart.Animation = require('./core/core.animation');
 Chart.animationService = require('./core/core.animations');

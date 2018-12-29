@@ -1,5 +1,5 @@
 /* global window: false */
-// 'use strict';
+'use strict';
 
 var defaults = require('./core.defaults');
 var helpers = require('../helpers/index');
@@ -13,7 +13,7 @@ defaults._set('global', {
 	}
 });
 
-const AnimationService = {
+module.exports = {
 	frameDuration: 17,
 	animations: [],
 	dropFrames: 0,
@@ -126,6 +126,4 @@ const AnimationService = {
 			}
 		}
 	}
-}
-
-export default AnimationService
+};
