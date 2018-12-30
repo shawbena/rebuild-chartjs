@@ -8,7 +8,7 @@ var Interaction = require('./interaction');
 var layouts = require('./layouts');
 var platform = require('../platforms');
 var plugins = require('./plugins');
-var scaleService = require('../core/scaleService');
+var scaleService = require('./scaleService');
 var Tooltip = require('./tooltip');
 import Chart from '../charts'
 

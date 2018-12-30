@@ -21429,7 +21429,7 @@ var Interaction = __webpack_require__(/*! ./interaction */ "./src/core/interacti
 var layouts = __webpack_require__(/*! ./layouts */ "./src/core/layouts.js");
 var platform = __webpack_require__(/*! ../platforms */ "./src/platforms/index.js");
 var plugins = __webpack_require__(/*! ./plugins */ "./src/core/plugins.js");
-var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
+var scaleService = __webpack_require__(/*! ./scaleService */ "./src/core/scaleService.js");
 var Tooltip = __webpack_require__(/*! ./tooltip */ "./src/core/tooltip.js");
 
 
@@ -32497,3 +32497,4 @@ function determineLabelFormat(data, timeOpts) {
 
 /******/ })["default"];
 });
+//# sourceMappingURL=Chart.bundle.js.map
