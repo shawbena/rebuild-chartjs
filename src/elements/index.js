@@ -1,7 +1,8 @@
 'use strict';
 
-module.exports = {};
-module.exports.Arc = require('./element.arc');
-module.exports.Line = require('./element.line');
-module.exports.Point = require('./element.point');
-module.exports.Rectangle = require('./element.rectangle');
+// module.exports = {};
+exports.Arc = require('./arc');
+exports.Line = require('./line');
+exports.Point = require('./point');
+exports.Rectangle = require('./rectangle');
+

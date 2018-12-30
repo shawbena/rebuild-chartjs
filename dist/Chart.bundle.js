@@ -19111,52 +19111,52 @@ module.exports = function(module) {
  */
 var Chart = __webpack_require__(/*! ./core */ "./src/core/index.js");
 
-Chart.helpers = __webpack_require__(/*! ./helpers/index */ "./src/helpers/index.js");
+Chart.helpers = __webpack_require__(/*! ./helpers */ "./src/helpers/index.js");
 
 // @todo dispatch these helpers into appropriated helpers/helpers.* file and write unit tests!
-__webpack_require__(/*! ./core/core.helpers */ "./src/core/core.helpers.js");
+__webpack_require__(/*! ./core/helpers */ "./src/core/helpers.js");
 
-Chart.Animation = __webpack_require__(/*! ./core/core.animation */ "./src/core/core.animation.js");
-Chart.animationService = __webpack_require__(/*! ./core/core.animations */ "./src/core/core.animations.js");
-Chart.defaults = __webpack_require__(/*! ./core/core.defaults */ "./src/core/core.defaults.js");
-Chart.Element = __webpack_require__(/*! ./core/core.element */ "./src/core/core.element.js");
-Chart.elements = __webpack_require__(/*! ./elements/index */ "./src/elements/index.js");
-Chart.Interaction = __webpack_require__(/*! ./core/core.interaction */ "./src/core/core.interaction.js");
-Chart.layouts = __webpack_require__(/*! ./core/core.layouts */ "./src/core/core.layouts.js");
-Chart.platform = __webpack_require__(/*! ./platforms/platform */ "./src/platforms/platform.js");
-Chart.plugins = __webpack_require__(/*! ./core/core.plugins */ "./src/core/core.plugins.js");
-Chart.Scale = __webpack_require__(/*! ./core/core.scale */ "./src/core/core.scale.js");
-Chart.scaleService = __webpack_require__(/*! ./core/core.scaleService */ "./src/core/core.scaleService.js");
-Chart.Ticks = __webpack_require__(/*! ./core/core.ticks */ "./src/core/core.ticks.js");
-Chart.Tooltip = __webpack_require__(/*! ./core/core.tooltip */ "./src/core/core.tooltip.js");
+Chart.Animation = __webpack_require__(/*! ./core/animation */ "./src/core/animation.js");
+Chart.animationService = __webpack_require__(/*! ./core/animations */ "./src/core/animations.js");
+Chart.defaults = __webpack_require__(/*! ./core/defaults */ "./src/core/defaults.js");
+Chart.Element = __webpack_require__(/*! ./core/element */ "./src/core/element.js");
+Chart.elements = __webpack_require__(/*! ./elements */ "./src/elements/index.js");
+Chart.Interaction = __webpack_require__(/*! ./core/interaction */ "./src/core/interaction.js");
+Chart.layouts = __webpack_require__(/*! ./core/layouts */ "./src/core/layouts.js");
+Chart.platform = __webpack_require__(/*! ./platforms */ "./src/platforms/index.js");
+Chart.plugins = __webpack_require__(/*! ./core/plugins */ "./src/core/plugins.js");
+Chart.Scale = __webpack_require__(/*! ./core/scale */ "./src/core/scale.js");
+Chart.scaleService = __webpack_require__(/*! ./core/scaleService */ "./src/core/scaleService.js");
+Chart.Ticks = __webpack_require__(/*! ./core/ticks */ "./src/core/ticks.js");
+Chart.Tooltip = __webpack_require__(/*! ./core/tooltip */ "./src/core/tooltip.js");
 
-__webpack_require__(/*! ./core/core.controller */ "./src/core/core.controller.js")(Chart);
-__webpack_require__(/*! ./core/core.datasetController */ "./src/core/core.datasetController.js")(Chart);
+__webpack_require__(/*! ./core/controller */ "./src/core/controller.js")(Chart);
+__webpack_require__(/*! ./core/datasetController */ "./src/core/datasetController.js")(Chart);
 
-__webpack_require__(/*! ./scales/scale.linearbase */ "./src/scales/scale.linearbase.js")(Chart);
-__webpack_require__(/*! ./scales/scale.category */ "./src/scales/scale.category.js")(Chart);
-__webpack_require__(/*! ./scales/scale.linear */ "./src/scales/scale.linear.js")(Chart);
-__webpack_require__(/*! ./scales/scale.logarithmic */ "./src/scales/scale.logarithmic.js")(Chart);
-__webpack_require__(/*! ./scales/scale.radialLinear */ "./src/scales/scale.radialLinear.js")(Chart);
-__webpack_require__(/*! ./scales/scale.time */ "./src/scales/scale.time.js")(Chart);
+__webpack_require__(/*! ./scales/linearbase */ "./src/scales/linearbase.js")(Chart);
+__webpack_require__(/*! ./scales/category */ "./src/scales/category.js")
+__webpack_require__(/*! ./scales/linear */ "./src/scales/linear.js")(Chart);
+__webpack_require__(/*! ./scales/logarithmic */ "./src/scales/logarithmic.js")(Chart);
+__webpack_require__(/*! ./scales/radialLinear */ "./src/scales/radialLinear.js")(Chart);
+__webpack_require__(/*! ./scales/time */ "./src/scales/time.js")(Chart);
 
 // Controllers must be loaded after elements
-// See Chart.core.datasetController.dataElementType
-__webpack_require__(/*! ./controllers/controller.bar */ "./src/controllers/controller.bar.js")(Chart);
-__webpack_require__(/*! ./controllers/controller.bubble */ "./src/controllers/controller.bubble.js")(Chart);
-__webpack_require__(/*! ./controllers/controller.doughnut */ "./src/controllers/controller.doughnut.js")(Chart);
-__webpack_require__(/*! ./controllers/controller.line */ "./src/controllers/controller.line.js")(Chart);
-__webpack_require__(/*! ./controllers/controller.polarArea */ "./src/controllers/controller.polarArea.js")(Chart);
-__webpack_require__(/*! ./controllers/controller.radar */ "./src/controllers/controller.radar.js")(Chart);
-__webpack_require__(/*! ./controllers/controller.scatter */ "./src/controllers/controller.scatter.js")(Chart);
+// See Chart.datasetController.dataElementType
+__webpack_require__(/*! ./controllers/bar */ "./src/controllers/bar.js")(Chart);
+__webpack_require__(/*! ./controllers/bubble */ "./src/controllers/bubble.js")(Chart);
+__webpack_require__(/*! ./controllers/doughnut */ "./src/controllers/doughnut.js")(Chart);
+__webpack_require__(/*! ./controllers/line */ "./src/controllers/line.js")(Chart);
+__webpack_require__(/*! ./controllers/polarArea */ "./src/controllers/polarArea.js")(Chart);
+__webpack_require__(/*! ./controllers/radar */ "./src/controllers/radar.js")(Chart);
+__webpack_require__(/*! ./controllers/scatter */ "./src/controllers/scatter.js")(Chart);
 
-__webpack_require__(/*! ./charts/Chart.Bar */ "./src/charts/Chart.Bar.js")(Chart);
-__webpack_require__(/*! ./charts/Chart.Bubble */ "./src/charts/Chart.Bubble.js")(Chart);
-__webpack_require__(/*! ./charts/Chart.Doughnut */ "./src/charts/Chart.Doughnut.js")(Chart);
-__webpack_require__(/*! ./charts/Chart.Line */ "./src/charts/Chart.Line.js")(Chart);
-__webpack_require__(/*! ./charts/Chart.PolarArea */ "./src/charts/Chart.PolarArea.js")(Chart);
-__webpack_require__(/*! ./charts/Chart.Radar */ "./src/charts/Chart.Radar.js")(Chart);
-__webpack_require__(/*! ./charts/Chart.Scatter */ "./src/charts/Chart.Scatter.js")(Chart);
+__webpack_require__(/*! ./charts/bar */ "./src/charts/bar.js")(Chart);
+__webpack_require__(/*! ./charts/bubble */ "./src/charts/bubble.js")(Chart);
+__webpack_require__(/*! ./charts/doughnut */ "./src/charts/doughnut.js")(Chart);
+__webpack_require__(/*! ./charts/line */ "./src/charts/line.js")(Chart);
+__webpack_require__(/*! ./charts/polar-area */ "./src/charts/polar-area.js")(Chart);
+__webpack_require__(/*! ./charts/radar */ "./src/charts/radar.js")(Chart);
+__webpack_require__(/*! ./charts/scatter */ "./src/charts/scatter.js")(Chart);
 
 // Loading built-in plugins
 var plugins = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
@@ -19169,9 +19169,9 @@ for (var k in plugins) {
 Chart.platform.initialize();
 
 module.exports = Chart;
-if (typeof window !== 'undefined') {
-	window.Chart = Chart;
-}
+// if (typeof window !== 'undefined') {
+// 	window.Chart = Chart;
+// }
 
 // DEPRECATIONS
 
@@ -19233,10 +19233,10 @@ Chart.layoutService = Chart.layouts;
 
 /***/ }),
 
-/***/ "./src/charts/Chart.Bar.js":
-/*!*********************************!*\
-  !*** ./src/charts/Chart.Bar.js ***!
-  \*********************************/
+/***/ "./src/charts/bar.js":
+/*!***************************!*\
+  !*** ./src/charts/bar.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19256,10 +19256,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/charts/Chart.Bubble.js":
-/*!************************************!*\
-  !*** ./src/charts/Chart.Bubble.js ***!
-  \************************************/
+/***/ "./src/charts/bubble.js":
+/*!******************************!*\
+  !*** ./src/charts/bubble.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19278,10 +19278,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/charts/Chart.Doughnut.js":
-/*!**************************************!*\
-  !*** ./src/charts/Chart.Doughnut.js ***!
-  \**************************************/
+/***/ "./src/charts/doughnut.js":
+/*!********************************!*\
+  !*** ./src/charts/doughnut.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19301,10 +19301,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/charts/Chart.Line.js":
-/*!**********************************!*\
-  !*** ./src/charts/Chart.Line.js ***!
-  \**********************************/
+/***/ "./src/charts/line.js":
+/*!****************************!*\
+  !*** ./src/charts/line.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19324,10 +19324,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/charts/Chart.PolarArea.js":
-/*!***************************************!*\
-  !*** ./src/charts/Chart.PolarArea.js ***!
-  \***************************************/
+/***/ "./src/charts/polar-area.js":
+/*!**********************************!*\
+  !*** ./src/charts/polar-area.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19347,10 +19347,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/charts/Chart.Radar.js":
-/*!***********************************!*\
-  !*** ./src/charts/Chart.Radar.js ***!
-  \***********************************/
+/***/ "./src/charts/radar.js":
+/*!*****************************!*\
+  !*** ./src/charts/radar.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19370,10 +19370,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/charts/Chart.Scatter.js":
-/*!*************************************!*\
-  !*** ./src/charts/Chart.Scatter.js ***!
-  \*************************************/
+/***/ "./src/charts/scatter.js":
+/*!*******************************!*\
+  !*** ./src/charts/scatter.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19390,17 +19390,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.bar.js":
-/*!*******************************************!*\
-  !*** ./src/controllers/controller.bar.js ***!
-  \*******************************************/
+/***/ "./src/controllers/bar.js":
+/*!********************************!*\
+  !*** ./src/controllers/bar.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -19883,17 +19883,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.bubble.js":
-/*!**********************************************!*\
-  !*** ./src/controllers/controller.bubble.js ***!
-  \**********************************************/
+/***/ "./src/controllers/bubble.js":
+/*!***********************************!*\
+  !*** ./src/controllers/bubble.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -20068,17 +20068,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.doughnut.js":
-/*!************************************************!*\
-  !*** ./src/controllers/controller.doughnut.js ***!
-  \************************************************/
+/***/ "./src/controllers/doughnut.js":
+/*!*************************************!*\
+  !*** ./src/controllers/doughnut.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -20381,17 +20381,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.line.js":
-/*!********************************************!*\
-  !*** ./src/controllers/controller.line.js ***!
-  \********************************************/
+/***/ "./src/controllers/line.js":
+/*!*********************************!*\
+  !*** ./src/controllers/line.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -20737,17 +20737,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.polarArea.js":
-/*!*************************************************!*\
-  !*** ./src/controllers/controller.polarArea.js ***!
-  \*************************************************/
+/***/ "./src/controllers/polarArea.js":
+/*!**************************************!*\
+  !*** ./src/controllers/polarArea.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -21004,17 +21004,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.radar.js":
-/*!*********************************************!*\
-  !*** ./src/controllers/controller.radar.js ***!
-  \*********************************************/
+/***/ "./src/controllers/radar.js":
+/*!**********************************!*\
+  !*** ./src/controllers/radar.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -21179,17 +21179,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/controllers/controller.scatter.js":
-/*!***********************************************!*\
-  !*** ./src/controllers/controller.scatter.js ***!
-  \***********************************************/
+/***/ "./src/controllers/scatter.js":
+/*!************************************!*\
+  !*** ./src/controllers/scatter.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 
 defaults._set('scatter', {
 	hover: {
@@ -21233,17 +21233,17 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/core/core.animation.js":
-/*!************************************!*\
-  !*** ./src/core/core.animation.js ***!
-  \************************************/
+/***/ "./src/core/animation.js":
+/*!*******************************!*\
+  !*** ./src/core/animation.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Element = __webpack_require__(/*! ./core.element */ "./src/core/core.element.js");
+var Element = __webpack_require__(/*! ./element */ "./src/core/element.js");
 
 // var exports = module.exports = Element.extend({
 // 	chart: null, // the animation associated chart instance
@@ -21299,10 +21299,10 @@ module.exports = Element.extend({
 
 /***/ }),
 
-/***/ "./src/core/core.animations.js":
-/*!*************************************!*\
-  !*** ./src/core/core.animations.js ***!
-  \*************************************/
+/***/ "./src/core/animations.js":
+/*!********************************!*\
+  !*** ./src/core/animations.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21310,7 +21310,7 @@ module.exports = Element.extend({
 /* global window: false */
 
 
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
 defaults._set('global', {
@@ -21440,26 +21440,26 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.controller.js":
-/*!*************************************!*\
-  !*** ./src/core/core.controller.js ***!
-  \*************************************/
+/***/ "./src/core/controller.js":
+/*!********************************!*\
+  !*** ./src/core/controller.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Animation = __webpack_require__(/*! ./core.animation */ "./src/core/core.animation.js");
-var animations = __webpack_require__(/*! ./core.animations */ "./src/core/core.animations.js");
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
+var Animation = __webpack_require__(/*! ./animation */ "./src/core/animation.js");
+var animations = __webpack_require__(/*! ./animations */ "./src/core/animations.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var Interaction = __webpack_require__(/*! ./core.interaction */ "./src/core/core.interaction.js");
-var layouts = __webpack_require__(/*! ./core.layouts */ "./src/core/core.layouts.js");
-var platform = __webpack_require__(/*! ../platforms/platform */ "./src/platforms/platform.js");
-var plugins = __webpack_require__(/*! ./core.plugins */ "./src/core/core.plugins.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
-var Tooltip = __webpack_require__(/*! ./core.tooltip */ "./src/core/core.tooltip.js");
+var Interaction = __webpack_require__(/*! ./interaction */ "./src/core/interaction.js");
+var layouts = __webpack_require__(/*! ./layouts */ "./src/core/layouts.js");
+var platform = __webpack_require__(/*! ../platforms */ "./src/platforms/index.js");
+var plugins = __webpack_require__(/*! ./plugins */ "./src/core/plugins.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
+var Tooltip = __webpack_require__(/*! ./tooltip */ "./src/core/tooltip.js");
 
 module.exports = function(Chart) {
 
@@ -22412,10 +22412,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/core/core.datasetController.js":
-/*!********************************************!*\
-  !*** ./src/core/core.datasetController.js ***!
-  \********************************************/
+/***/ "./src/core/datasetController.js":
+/*!***************************************!*\
+  !*** ./src/core/datasetController.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22506,13 +22506,13 @@ module.exports = function(Chart) {
 
 		/**
 		 * Element type used to generate a meta dataset (e.g. Chart.element.Line).
-		 * @type {Chart.core.element}
+		 * @type {Chart.element}
 		 */
 		datasetElementType: null,
 
 		/**
 		 * Element type used to generate a meta data (e.g. Chart.element.Point).
-		 * @type {Chart.core.element}
+		 * @type {Chart.element}
 		 */
 		dataElementType: null,
 
@@ -22753,10 +22753,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/core/core.defaults.js":
-/*!***********************************!*\
-  !*** ./src/core/core.defaults.js ***!
-  \***********************************/
+/***/ "./src/core/defaults.js":
+/*!******************************!*\
+  !*** ./src/core/defaults.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22777,10 +22777,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.element.js":
-/*!**********************************!*\
-  !*** ./src/core/core.element.js ***!
-  \**********************************/
+/***/ "./src/core/element.js":
+/*!*****************************!*\
+  !*** ./src/core/element.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22904,10 +22904,10 @@ module.exports = Element;
 
 /***/ }),
 
-/***/ "./src/core/core.helpers.js":
-/*!**********************************!*\
-  !*** ./src/core/core.helpers.js ***!
-  \**********************************/
+/***/ "./src/core/helpers.js":
+/*!*****************************!*\
+  !*** ./src/core/helpers.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22916,9 +22916,9 @@ module.exports = Element;
 /* global document: false */
 
 var color = __webpack_require__(/*! chartjs-color */ "./node_modules/chartjs-color/index.js");
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
 
 // module.exports = function() {
 
@@ -23549,10 +23549,70 @@ helpers.getHoverColor = function (colorValue) {
 
 /***/ }),
 
-/***/ "./src/core/core.interaction.js":
-/*!**************************************!*\
-  !*** ./src/core/core.interaction.js ***!
-  \**************************************/
+/***/ "./src/core/index.js":
+/*!***************************!*\
+  !*** ./src/core/index.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
+
+defaults._set('global', {
+	responsive: true,
+	responsiveAnimationDuration: 0,
+	maintainAspectRatio: true,
+	events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove'],
+	hover: {
+		onHover: null,
+		mode: 'nearest',
+		intersect: true,
+		animationDuration: 400
+	},
+	onClick: null,
+	defaultColor: 'rgba(0,0,0,0.1)',
+	defaultFontColor: '#666',
+	defaultFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+	defaultFontSize: 12,
+	defaultFontStyle: 'normal',
+	showLines: true,
+
+	// Element defaults defined in element extensions
+	elements: {},
+
+	// Layout options such as padding
+	layout: {
+		padding: {
+			top: 0,
+			right: 0,
+			bottom: 0,
+			left: 0
+		}
+	}
+});
+
+// Occupy the global variable of Chart, and create a simple base class
+var Chart = function(item, config) {
+	this.construct(item, config);
+	return this;
+};
+
+Chart.Chart = Chart;
+
+// return Chart;
+
+module.exports = Chart
+
+
+/***/ }),
+
+/***/ "./src/core/interaction.js":
+/*!*********************************!*\
+  !*** ./src/core/interaction.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23891,10 +23951,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.layouts.js":
-/*!**********************************!*\
-  !*** ./src/core/core.layouts.js ***!
-  \**********************************/
+/***/ "./src/core/layouts.js":
+/*!*****************************!*\
+  !*** ./src/core/layouts.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24322,17 +24382,17 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.plugins.js":
-/*!**********************************!*\
-  !*** ./src/core/core.plugins.js ***!
-  \**********************************/
+/***/ "./src/core/plugins.js":
+/*!*****************************!*\
+  !*** ./src/core/plugins.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
 defaults._set('global', {
@@ -24716,20 +24776,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.scale.js":
-/*!********************************!*\
-  !*** ./src/core/core.scale.js ***!
-  \********************************/
+/***/ "./src/core/scale.js":
+/*!***************************!*\
+  !*** ./src/core/scale.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ./core.element */ "./src/core/core.element.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ./element */ "./src/core/element.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var Ticks = __webpack_require__(/*! ./core.ticks */ "./src/core/core.ticks.js");
+var Ticks = __webpack_require__(/*! ./ticks */ "./src/core/ticks.js");
 
 defaults._set('scale', {
 	display: true,
@@ -25662,19 +25722,19 @@ module.exports = Element.extend({
 
 /***/ }),
 
-/***/ "./src/core/core.scaleService.js":
-/*!***************************************!*\
-  !*** ./src/core/core.scaleService.js ***!
-  \***************************************/
+/***/ "./src/core/scaleService.js":
+/*!**********************************!*\
+  !*** ./src/core/scaleService.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var layouts = __webpack_require__(/*! ./core.layouts */ "./src/core/core.layouts.js");
+var layouts = __webpack_require__(/*! ./layouts */ "./src/core/layouts.js");
 
 module.exports = {
 	// Scale registration object. Extensions can register new scale types (such as log or DB scales) and then
@@ -25717,10 +25777,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.ticks.js":
-/*!********************************!*\
-  !*** ./src/core/core.ticks.js ***!
-  \********************************/
+/***/ "./src/core/ticks.js":
+/*!***************************!*\
+  !*** ./src/core/ticks.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25805,18 +25865,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/core/core.tooltip.js":
-/*!**********************************!*\
-  !*** ./src/core/core.tooltip.js ***!
-  \**********************************/
+/***/ "./src/core/tooltip.js":
+/*!*****************************!*\
+  !*** ./src/core/tooltip.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ./core.element */ "./src/core/core.element.js");
+var defaults = __webpack_require__(/*! ./defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ./element */ "./src/core/element.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
 defaults._set('global', {
@@ -26293,7 +26353,7 @@ function getBeforeAfterBodyLines(callback) {
 	return pushOrConcat([], splitNewlines(callback));
 }
 
-var exports = module.exports = Element.extend({
+module.exports = Element.extend({
 	initialize: function() {
 		this._model = getBaseModel(this._options);
 		this._lastActive = [];
@@ -26784,84 +26844,25 @@ var exports = module.exports = Element.extend({
 /**
  * @namespace Chart.Tooltip.positioners
  */
-exports.positioners = positioners;
+// exports.positioners = positioners;
+
 
 
 
 /***/ }),
 
-/***/ "./src/core/index.js":
-/*!***************************!*\
-  !*** ./src/core/index.js ***!
-  \***************************/
+/***/ "./src/elements/arc.js":
+/*!*****************************!*\
+  !*** ./src/elements/arc.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ./core.defaults */ "./src/core/core.defaults.js");
-
-defaults._set('global', {
-	responsive: true,
-	responsiveAnimationDuration: 0,
-	maintainAspectRatio: true,
-	events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove'],
-	hover: {
-		onHover: null,
-		mode: 'nearest',
-		intersect: true,
-		animationDuration: 400
-	},
-	onClick: null,
-	defaultColor: 'rgba(0,0,0,0.1)',
-	defaultFontColor: '#666',
-	defaultFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-	defaultFontSize: 12,
-	defaultFontStyle: 'normal',
-	showLines: true,
-
-	// Element defaults defined in element extensions
-	elements: {},
-
-	// Layout options such as padding
-	layout: {
-		padding: {
-			top: 0,
-			right: 0,
-			bottom: 0,
-			left: 0
-		}
-	}
-});
-
-// Occupy the global variable of Chart, and create a simple base class
-var Chart = function(item, config) {
-	this.construct(item, config);
-	return this;
-};
-
-Chart.Chart = Chart;
-
-// return Chart;
-
-module.exports = Chart
-
-
-/***/ }),
-
-/***/ "./src/elements/element.arc.js":
-/*!*************************************!*\
-  !*** ./src/elements/element.arc.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ../core/core.element */ "./src/core/core.element.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ../core/element */ "./src/core/element.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
 defaults._set('global', {
@@ -26969,19 +26970,39 @@ module.exports = Element.extend({
 
 /***/ }),
 
-/***/ "./src/elements/element.line.js":
-/*!**************************************!*\
-  !*** ./src/elements/element.line.js ***!
-  \**************************************/
+/***/ "./src/elements/index.js":
+/*!*******************************!*\
+  !*** ./src/elements/index.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ../core/core.element */ "./src/core/core.element.js");
-var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
+// module.exports = {};
+exports.Arc = __webpack_require__(/*! ./arc */ "./src/elements/arc.js");
+exports.Line = __webpack_require__(/*! ./line */ "./src/elements/line.js");
+exports.Point = __webpack_require__(/*! ./point */ "./src/elements/point.js");
+exports.Rectangle = __webpack_require__(/*! ./rectangle */ "./src/elements/rectangle.js");
+
+
+
+/***/ }),
+
+/***/ "./src/elements/line.js":
+/*!******************************!*\
+  !*** ./src/elements/line.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ../core/element */ "./src/core/element.js");
+var helpers = __webpack_require__(/*! ../helpers */ "./src/helpers/index.js");
 
 var globalDefaults = defaults.global;
 
@@ -27072,18 +27093,18 @@ module.exports = Element.extend({
 
 /***/ }),
 
-/***/ "./src/elements/element.point.js":
-/*!***************************************!*\
-  !*** ./src/elements/element.point.js ***!
-  \***************************************/
+/***/ "./src/elements/point.js":
+/*!*******************************!*\
+  !*** ./src/elements/point.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ../core/core.element */ "./src/core/core.element.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ../core/element */ "./src/core/element.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
 var defaultColor = defaults.global.defaultColor;
@@ -27173,18 +27194,18 @@ module.exports = Element.extend({
 
 /***/ }),
 
-/***/ "./src/elements/element.rectangle.js":
-/*!*******************************************!*\
-  !*** ./src/elements/element.rectangle.js ***!
-  \*******************************************/
+/***/ "./src/elements/rectangle.js":
+/*!***********************************!*\
+  !*** ./src/elements/rectangle.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ../core/core.element */ "./src/core/core.element.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ../core/element */ "./src/core/element.js");
 
 defaults._set('global', {
 	elements: {
@@ -27402,9 +27423,9 @@ module.exports = Element.extend({
 
 /***/ }),
 
-/***/ "./src/elements/index.js":
+/***/ "./src/helpers/canvas.js":
 /*!*******************************!*\
-  !*** ./src/elements/index.js ***!
+  !*** ./src/helpers/canvas.js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -27412,26 +27433,7 @@ module.exports = Element.extend({
 "use strict";
 
 
-module.exports = {};
-module.exports.Arc = __webpack_require__(/*! ./element.arc */ "./src/elements/element.arc.js");
-module.exports.Line = __webpack_require__(/*! ./element.line */ "./src/elements/element.line.js");
-module.exports.Point = __webpack_require__(/*! ./element.point */ "./src/elements/element.point.js");
-module.exports.Rectangle = __webpack_require__(/*! ./element.rectangle */ "./src/elements/element.rectangle.js");
-
-
-/***/ }),
-
-/***/ "./src/helpers/helpers.canvas.js":
-/*!***************************************!*\
-  !*** ./src/helpers/helpers.canvas.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var helpers = __webpack_require__(/*! ./helpers.core */ "./src/helpers/helpers.core.js");
+var helpers = __webpack_require__(/*! ./core */ "./src/helpers/core.js");
 
 /**
  * @namespace Chart.helpers.canvas
@@ -27642,10 +27644,10 @@ helpers.drawRoundedRectangle = function(ctx) {
 
 /***/ }),
 
-/***/ "./src/helpers/helpers.core.js":
-/*!*************************************!*\
-  !*** ./src/helpers/helpers.core.js ***!
-  \*************************************/
+/***/ "./src/helpers/core.js":
+/*!*****************************!*\
+  !*** ./src/helpers/core.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27993,17 +27995,17 @@ helpers.getValueAtIndexOrDefault = helpers.valueAtIndexOrDefault;
 
 /***/ }),
 
-/***/ "./src/helpers/helpers.easing.js":
-/*!***************************************!*\
-  !*** ./src/helpers/helpers.easing.js ***!
-  \***************************************/
+/***/ "./src/helpers/easing.js":
+/*!*******************************!*\
+  !*** ./src/helpers/easing.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var helpers = __webpack_require__(/*! ./helpers.core */ "./src/helpers/helpers.core.js");
+var helpers = __webpack_require__(/*! ./core */ "./src/helpers/core.js");
 
 /**
  * Easing functions adapted from Robert Penner's easing equations.
@@ -28255,17 +28257,35 @@ helpers.easingEffects = effects;
 
 /***/ }),
 
-/***/ "./src/helpers/helpers.options.js":
-/*!****************************************!*\
-  !*** ./src/helpers/helpers.options.js ***!
-  \****************************************/
+/***/ "./src/helpers/index.js":
+/*!******************************!*\
+  !*** ./src/helpers/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var helpers = __webpack_require__(/*! ./helpers.core */ "./src/helpers/helpers.core.js");
+module.exports = __webpack_require__(/*! ./core */ "./src/helpers/core.js");
+module.exports.easing = __webpack_require__(/*! ./easing */ "./src/helpers/easing.js");
+module.exports.canvas = __webpack_require__(/*! ./canvas */ "./src/helpers/canvas.js");
+module.exports.options = __webpack_require__(/*! ./options */ "./src/helpers/options.js");
+
+
+/***/ }),
+
+/***/ "./src/helpers/options.js":
+/*!********************************!*\
+  !*** ./src/helpers/options.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var helpers = __webpack_require__(/*! ./core */ "./src/helpers/core.js");
 
 /**
  * @alias Chart.helpers.options
@@ -28363,28 +28383,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/helpers/index.js":
-/*!******************************!*\
-  !*** ./src/helpers/index.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(/*! ./helpers.core */ "./src/helpers/helpers.core.js");
-module.exports.easing = __webpack_require__(/*! ./helpers.easing */ "./src/helpers/helpers.easing.js");
-module.exports.canvas = __webpack_require__(/*! ./helpers.canvas */ "./src/helpers/helpers.canvas.js");
-module.exports.options = __webpack_require__(/*! ./helpers.options */ "./src/helpers/helpers.options.js");
-
-
-/***/ }),
-
-/***/ "./src/platforms/platform.basic.js":
-/*!*****************************************!*\
-  !*** ./src/platforms/platform.basic.js ***!
-  \*****************************************/
+/***/ "./src/platforms/basic.js":
+/*!********************************!*\
+  !*** ./src/platforms/basic.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -28407,10 +28409,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/platforms/platform.dom.js":
-/*!***************************************!*\
-  !*** ./src/platforms/platform.dom.js ***!
-  \***************************************/
+/***/ "./src/platforms/dom.js":
+/*!******************************!*\
+  !*** ./src/platforms/dom.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28876,10 +28878,10 @@ helpers.removeEvent = removeEventListener;
 
 /***/ }),
 
-/***/ "./src/platforms/platform.js":
-/*!***********************************!*\
-  !*** ./src/platforms/platform.js ***!
-  \***********************************/
+/***/ "./src/platforms/index.js":
+/*!********************************!*\
+  !*** ./src/platforms/index.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28887,8 +28889,8 @@ helpers.removeEvent = removeEventListener;
 
 
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var basic = __webpack_require__(/*! ./platform.basic */ "./src/platforms/platform.basic.js");
-var dom = __webpack_require__(/*! ./platform.dom */ "./src/platforms/platform.dom.js");
+var basic = __webpack_require__(/*! ./basic */ "./src/platforms/basic.js");
+var dom = __webpack_require__(/*! ./dom */ "./src/platforms/dom.js");
 
 // @TODO Make possible to select another platform at build time.
 var implementation = dom._enabled ? dom : basic;
@@ -28962,28 +28964,10 @@ module.exports = helpers.extend({
 
 /***/ }),
 
-/***/ "./src/plugins/index.js":
-/*!******************************!*\
-  !*** ./src/plugins/index.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = {};
-module.exports.filler = __webpack_require__(/*! ./plugin.filler */ "./src/plugins/plugin.filler.js");
-module.exports.legend = __webpack_require__(/*! ./plugin.legend */ "./src/plugins/plugin.legend.js");
-module.exports.title = __webpack_require__(/*! ./plugin.title */ "./src/plugins/plugin.title.js");
-
-
-/***/ }),
-
-/***/ "./src/plugins/plugin.filler.js":
-/*!**************************************!*\
-  !*** ./src/plugins/plugin.filler.js ***!
-  \**************************************/
+/***/ "./src/plugins/filler.js":
+/*!*******************************!*\
+  !*** ./src/plugins/filler.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28996,7 +28980,7 @@ module.exports.title = __webpack_require__(/*! ./plugin.title */ "./src/plugins/
 
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var elements = __webpack_require__(/*! ../elements/index */ "./src/elements/index.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
 
@@ -29310,20 +29294,37 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/plugins/plugin.legend.js":
-/*!**************************************!*\
-  !*** ./src/plugins/plugin.legend.js ***!
-  \**************************************/
+/***/ "./src/plugins/index.js":
+/*!******************************!*\
+  !*** ./src/plugins/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ../core/core.element */ "./src/core/core.element.js");
+exports.filler = __webpack_require__(/*! ./filler */ "./src/plugins/filler.js");
+exports.legend = __webpack_require__(/*! ./legend */ "./src/plugins/legend.js");
+exports.title = __webpack_require__(/*! ./title */ "./src/plugins/title.js");
+
+
+/***/ }),
+
+/***/ "./src/plugins/legend.js":
+/*!*******************************!*\
+  !*** ./src/plugins/legend.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ../core/element */ "./src/core/element.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var layouts = __webpack_require__(/*! ../core/core.layouts */ "./src/core/core.layouts.js");
+var layouts = __webpack_require__(/*! ../core/layouts */ "./src/core/layouts.js");
 
 var noop = helpers.noop;
 
@@ -29898,20 +29899,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/plugins/plugin.title.js":
-/*!*************************************!*\
-  !*** ./src/plugins/plugin.title.js ***!
-  \*************************************/
+/***/ "./src/plugins/title.js":
+/*!******************************!*\
+  !*** ./src/plugins/title.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
-var Element = __webpack_require__(/*! ../core/core.element */ "./src/core/core.element.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
+var Element = __webpack_require__(/*! ../core/element */ "./src/core/element.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var layouts = __webpack_require__(/*! ../core/core.layouts */ "./src/core/core.layouts.js");
+var layouts = __webpack_require__(/*! ../core/layouts */ "./src/core/layouts.js");
 
 var noop = helpers.noop;
 
@@ -30162,167 +30163,167 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/scales/scale.category.js":
-/*!**************************************!*\
-  !*** ./src/scales/scale.category.js ***!
-  \**************************************/
+/***/ "./src/scales/category.js":
+/*!********************************!*\
+  !*** ./src/scales/category.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Scale = __webpack_require__(/*! ../core/core.scale */ "./src/core/core.scale.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
+var Scale = __webpack_require__(/*! ../core/scale */ "./src/core/scale.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
 
-module.exports = function() {
+// module.exports = function() {
 
-	// Default config for a category scale
-	var defaultConfig = {
-		position: 'bottom'
-	};
-
-	var DatasetScale = Scale.extend({
-		/**
-		* Internal function to get the correct labels. If data.xLabels or data.yLabels are defined, use those
-		* else fall back to data.labels
-		* @private
-		*/
-		getLabels: function() {
-			var data = this.chart.data;
-			return this.options.labels || (this.isHorizontal() ? data.xLabels : data.yLabels) || data.labels;
-		},
-
-		determineDataLimits: function() {
-			var me = this;
-			var labels = me.getLabels();
-			me.minIndex = 0;
-			me.maxIndex = labels.length - 1;
-			var findIndex;
-
-			if (me.options.ticks.min !== undefined) {
-				// user specified min value
-				findIndex = labels.indexOf(me.options.ticks.min);
-				me.minIndex = findIndex !== -1 ? findIndex : me.minIndex;
-			}
-
-			if (me.options.ticks.max !== undefined) {
-				// user specified max value
-				findIndex = labels.indexOf(me.options.ticks.max);
-				me.maxIndex = findIndex !== -1 ? findIndex : me.maxIndex;
-			}
-
-			me.min = labels[me.minIndex];
-			me.max = labels[me.maxIndex];
-		},
-
-		buildTicks: function() {
-			var me = this;
-			var labels = me.getLabels();
-			// If we are viewing some subset of labels, slice the original array
-			me.ticks = (me.minIndex === 0 && me.maxIndex === labels.length - 1) ? labels : labels.slice(me.minIndex, me.maxIndex + 1);
-		},
-
-		getLabelForIndex: function(index, datasetIndex) {
-			var me = this;
-			var data = me.chart.data;
-			var isHorizontal = me.isHorizontal();
-
-			if (data.yLabels && !isHorizontal) {
-				return me.getRightValue(data.datasets[datasetIndex].data[index]);
-			}
-			return me.ticks[index - me.minIndex];
-		},
-
-		// Used to get data value locations.  Value can either be an index or a numerical value
-		getPixelForValue: function(value, index) {
-			var me = this;
-			var offset = me.options.offset;
-			// 1 is added because we need the length but we have the indexes
-			var offsetAmt = Math.max((me.maxIndex + 1 - me.minIndex - (offset ? 0 : 1)), 1);
-
-			// If value is a data object, then index is the index in the data array,
-			// not the index of the scale. We need to change that.
-			var valueCategory;
-			if (value !== undefined && value !== null) {
-				valueCategory = me.isHorizontal() ? value.x : value.y;
-			}
-			if (valueCategory !== undefined || (value !== undefined && isNaN(index))) {
-				var labels = me.getLabels();
-				value = valueCategory || value;
-				var idx = labels.indexOf(value);
-				index = idx !== -1 ? idx : index;
-			}
-
-			if (me.isHorizontal()) {
-				var valueWidth = me.width / offsetAmt;
-				var widthOffset = (valueWidth * (index - me.minIndex));
-
-				if (offset) {
-					widthOffset += (valueWidth / 2);
-				}
-
-				return me.left + Math.round(widthOffset);
-			}
-			var valueHeight = me.height / offsetAmt;
-			var heightOffset = (valueHeight * (index - me.minIndex));
-
-			if (offset) {
-				heightOffset += (valueHeight / 2);
-			}
-
-			return me.top + Math.round(heightOffset);
-		},
-		getPixelForTick: function(index) {
-			return this.getPixelForValue(this.ticks[index], index + this.minIndex, null);
-		},
-		getValueForPixel: function(pixel) {
-			var me = this;
-			var offset = me.options.offset;
-			var value;
-			var offsetAmt = Math.max((me._ticks.length - (offset ? 0 : 1)), 1);
-			var horz = me.isHorizontal();
-			var valueDimension = (horz ? me.width : me.height) / offsetAmt;
-
-			pixel -= horz ? me.left : me.top;
-
-			if (offset) {
-				pixel -= (valueDimension / 2);
-			}
-
-			if (pixel <= 0) {
-				value = 0;
-			} else {
-				value = Math.round(pixel / valueDimension);
-			}
-
-			return value + me.minIndex;
-		},
-		getBasePixel: function() {
-			return this.bottom;
-		}
-	});
-
-	scaleService.registerScaleType('category', DatasetScale, defaultConfig);
+// Default config for a category scale
+var defaultConfig = {
+	position: 'bottom'
 };
+
+var DatasetScale = Scale.extend({
+	/**
+	* Internal function to get the correct labels. If data.xLabels or data.yLabels are defined, use those
+	* else fall back to data.labels
+	* @private
+	*/
+	getLabels: function () {
+		var data = this.chart.data;
+		return this.options.labels || (this.isHorizontal() ? data.xLabels : data.yLabels) || data.labels;
+	},
+
+	determineDataLimits: function () {
+		var me = this;
+		var labels = me.getLabels();
+		me.minIndex = 0;
+		me.maxIndex = labels.length - 1;
+		var findIndex;
+
+		if (me.options.ticks.min !== undefined) {
+			// user specified min value
+			findIndex = labels.indexOf(me.options.ticks.min);
+			me.minIndex = findIndex !== -1 ? findIndex : me.minIndex;
+		}
+
+		if (me.options.ticks.max !== undefined) {
+			// user specified max value
+			findIndex = labels.indexOf(me.options.ticks.max);
+			me.maxIndex = findIndex !== -1 ? findIndex : me.maxIndex;
+		}
+
+		me.min = labels[me.minIndex];
+		me.max = labels[me.maxIndex];
+	},
+
+	buildTicks: function () {
+		var me = this;
+		var labels = me.getLabels();
+		// If we are viewing some subset of labels, slice the original array
+		me.ticks = (me.minIndex === 0 && me.maxIndex === labels.length - 1) ? labels : labels.slice(me.minIndex, me.maxIndex + 1);
+	},
+
+	getLabelForIndex: function (index, datasetIndex) {
+		var me = this;
+		var data = me.chart.data;
+		var isHorizontal = me.isHorizontal();
+
+		if (data.yLabels && !isHorizontal) {
+			return me.getRightValue(data.datasets[datasetIndex].data[index]);
+		}
+		return me.ticks[index - me.minIndex];
+	},
+
+	// Used to get data value locations.  Value can either be an index or a numerical value
+	getPixelForValue: function (value, index) {
+		var me = this;
+		var offset = me.options.offset;
+		// 1 is added because we need the length but we have the indexes
+		var offsetAmt = Math.max((me.maxIndex + 1 - me.minIndex - (offset ? 0 : 1)), 1);
+
+		// If value is a data object, then index is the index in the data array,
+		// not the index of the scale. We need to change that.
+		var valueCategory;
+		if (value !== undefined && value !== null) {
+			valueCategory = me.isHorizontal() ? value.x : value.y;
+		}
+		if (valueCategory !== undefined || (value !== undefined && isNaN(index))) {
+			var labels = me.getLabels();
+			value = valueCategory || value;
+			var idx = labels.indexOf(value);
+			index = idx !== -1 ? idx : index;
+		}
+
+		if (me.isHorizontal()) {
+			var valueWidth = me.width / offsetAmt;
+			var widthOffset = (valueWidth * (index - me.minIndex));
+
+			if (offset) {
+				widthOffset += (valueWidth / 2);
+			}
+
+			return me.left + Math.round(widthOffset);
+		}
+		var valueHeight = me.height / offsetAmt;
+		var heightOffset = (valueHeight * (index - me.minIndex));
+
+		if (offset) {
+			heightOffset += (valueHeight / 2);
+		}
+
+		return me.top + Math.round(heightOffset);
+	},
+	getPixelForTick: function (index) {
+		return this.getPixelForValue(this.ticks[index], index + this.minIndex, null);
+	},
+	getValueForPixel: function (pixel) {
+		var me = this;
+		var offset = me.options.offset;
+		var value;
+		var offsetAmt = Math.max((me._ticks.length - (offset ? 0 : 1)), 1);
+		var horz = me.isHorizontal();
+		var valueDimension = (horz ? me.width : me.height) / offsetAmt;
+
+		pixel -= horz ? me.left : me.top;
+
+		if (offset) {
+			pixel -= (valueDimension / 2);
+		}
+
+		if (pixel <= 0) {
+			value = 0;
+		} else {
+			value = Math.round(pixel / valueDimension);
+		}
+
+		return value + me.minIndex;
+	},
+	getBasePixel: function () {
+		return this.bottom;
+	}
+});
+
+scaleService.registerScaleType('category', DatasetScale, defaultConfig);
+// };
 
 
 /***/ }),
 
-/***/ "./src/scales/scale.linear.js":
-/*!************************************!*\
-  !*** ./src/scales/scale.linear.js ***!
-  \************************************/
+/***/ "./src/scales/linear.js":
+/*!******************************!*\
+  !*** ./src/scales/linear.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
-var Ticks = __webpack_require__(/*! ../core/core.ticks */ "./src/core/core.ticks.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
+var Ticks = __webpack_require__(/*! ../core/ticks */ "./src/core/ticks.js");
 
 module.exports = function(Chart) {
 
@@ -30513,10 +30514,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/scales/scale.linearbase.js":
-/*!****************************************!*\
-  !*** ./src/scales/scale.linearbase.js ***!
-  \****************************************/
+/***/ "./src/scales/linearbase.js":
+/*!**********************************!*\
+  !*** ./src/scales/linearbase.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30524,7 +30525,7 @@ module.exports = function(Chart) {
 
 
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var Scale = __webpack_require__(/*! ../core/core.scale */ "./src/core/core.scale.js");
+var Scale = __webpack_require__(/*! ../core/scale */ "./src/core/scale.js");
 
 /**
  * Generate a set of linear ticks
@@ -30722,10 +30723,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/scales/scale.logarithmic.js":
-/*!*****************************************!*\
-  !*** ./src/scales/scale.logarithmic.js ***!
-  \*****************************************/
+/***/ "./src/scales/logarithmic.js":
+/*!***********************************!*\
+  !*** ./src/scales/logarithmic.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30733,9 +30734,9 @@ module.exports = function(Chart) {
 
 
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var Scale = __webpack_require__(/*! ../core/core.scale */ "./src/core/core.scale.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
-var Ticks = __webpack_require__(/*! ../core/core.ticks */ "./src/core/core.ticks.js");
+var Scale = __webpack_require__(/*! ../core/scale */ "./src/core/scale.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
+var Ticks = __webpack_require__(/*! ../core/ticks */ "./src/core/ticks.js");
 
 /**
  * Generate a set of logarithmic ticks
@@ -31083,20 +31084,20 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/scales/scale.radialLinear.js":
-/*!******************************************!*\
-  !*** ./src/scales/scale.radialLinear.js ***!
-  \******************************************/
+/***/ "./src/scales/radialLinear.js":
+/*!************************************!*\
+  !*** ./src/scales/radialLinear.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
-var Ticks = __webpack_require__(/*! ../core/core.ticks */ "./src/core/core.ticks.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
+var Ticks = __webpack_require__(/*! ../core/ticks */ "./src/core/ticks.js");
 
 module.exports = function(Chart) {
 
@@ -31625,10 +31626,10 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ "./src/scales/scale.time.js":
-/*!**********************************!*\
-  !*** ./src/scales/scale.time.js ***!
-  \**********************************/
+/***/ "./src/scales/time.js":
+/*!****************************!*\
+  !*** ./src/scales/time.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31639,10 +31640,10 @@ module.exports = function(Chart) {
 var moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 moment = typeof moment === 'function' ? moment : window.moment;
 
-var defaults = __webpack_require__(/*! ../core/core.defaults */ "./src/core/core.defaults.js");
+var defaults = __webpack_require__(/*! ../core/defaults */ "./src/core/defaults.js");
 var helpers = __webpack_require__(/*! ../helpers/index */ "./src/helpers/index.js");
-var Scale = __webpack_require__(/*! ../core/core.scale */ "./src/core/core.scale.js");
-var scaleService = __webpack_require__(/*! ../core/core.scaleService */ "./src/core/core.scaleService.js");
+var Scale = __webpack_require__(/*! ../core/scale */ "./src/core/scale.js");
+var scaleService = __webpack_require__(/*! ../core/scaleService */ "./src/core/scaleService.js");
 
 // Integer constants are from the ES6 spec.
 var MIN_INTEGER = Number.MIN_SAFE_INTEGER || -9007199254740991;

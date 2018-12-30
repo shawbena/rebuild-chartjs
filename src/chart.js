@@ -3,52 +3,52 @@
  */
 var Chart = require('./core');
 
-Chart.helpers = require('./helpers/index');
+Chart.helpers = require('./helpers');
 
 // @todo dispatch these helpers into appropriated helpers/helpers.* file and write unit tests!
-require('./core/core.helpers');
+require('./core/helpers');
 
-Chart.Animation = require('./core/core.animation');
-Chart.animationService = require('./core/core.animations');
-Chart.defaults = require('./core/core.defaults');
-Chart.Element = require('./core/core.element');
-Chart.elements = require('./elements/index');
-Chart.Interaction = require('./core/core.interaction');
-Chart.layouts = require('./core/core.layouts');
-Chart.platform = require('./platforms/platform');
-Chart.plugins = require('./core/core.plugins');
-Chart.Scale = require('./core/core.scale');
-Chart.scaleService = require('./core/core.scaleService');
-Chart.Ticks = require('./core/core.ticks');
-Chart.Tooltip = require('./core/core.tooltip');
+Chart.Animation = require('./core/animation');
+Chart.animationService = require('./core/animations');
+Chart.defaults = require('./core/defaults');
+Chart.Element = require('./core/element');
+Chart.elements = require('./elements');
+Chart.Interaction = require('./core/interaction');
+Chart.layouts = require('./core/layouts');
+Chart.platform = require('./platforms');
+Chart.plugins = require('./core/plugins');
+Chart.Scale = require('./core/scale');
+Chart.scaleService = require('./core/scaleService');
+Chart.Ticks = require('./core/ticks');
+Chart.Tooltip = require('./core/tooltip');
 
-require('./core/core.controller')(Chart);
-require('./core/core.datasetController')(Chart);
+require('./core/controller')(Chart);
+require('./core/datasetController')(Chart);
 
-require('./scales/scale.linearbase')(Chart);
-require('./scales/scale.category')(Chart);
-require('./scales/scale.linear')(Chart);
-require('./scales/scale.logarithmic')(Chart);
-require('./scales/scale.radialLinear')(Chart);
-require('./scales/scale.time')(Chart);
+require('./scales/linearbase')(Chart);
+require('./scales/category')
+require('./scales/linear')(Chart);
+require('./scales/logarithmic')(Chart);
+require('./scales/radialLinear')(Chart);
+require('./scales/time')(Chart);
 
 // Controllers must be loaded after elements
-// See Chart.core.datasetController.dataElementType
-require('./controllers/controller.bar')(Chart);
-require('./controllers/controller.bubble')(Chart);
-require('./controllers/controller.doughnut')(Chart);
-require('./controllers/controller.line')(Chart);
-require('./controllers/controller.polarArea')(Chart);
-require('./controllers/controller.radar')(Chart);
-require('./controllers/controller.scatter')(Chart);
+// See Chart.datasetController.dataElementType
+require('./controllers/bar')(Chart);
+require('./controllers/bubble')(Chart);
+require('./controllers/doughnut')(Chart);
+require('./controllers/line')(Chart);
+require('./controllers/polarArea')(Chart);
+require('./controllers/radar')(Chart);
+require('./controllers/scatter')(Chart);
 
-require('./charts/Chart.Bar')(Chart);
-require('./charts/Chart.Bubble')(Chart);
-require('./charts/Chart.Doughnut')(Chart);
-require('./charts/Chart.Line')(Chart);
-require('./charts/Chart.PolarArea')(Chart);
-require('./charts/Chart.Radar')(Chart);
-require('./charts/Chart.Scatter')(Chart);
+require('./charts/bar')(Chart);
+require('./charts/bubble')(Chart);
+require('./charts/doughnut')(Chart);
+require('./charts/line')(Chart);
+require('./charts/polar-area')(Chart);
+require('./charts/radar')(Chart);
+require('./charts/scatter')(Chart);
 
 // Loading built-in plugins
 var plugins = require('./plugins');
@@ -61,9 +61,9 @@ for (var k in plugins) {
 Chart.platform.initialize();
 
 module.exports = Chart;
-if (typeof window !== 'undefined') {
-	window.Chart = Chart;
-}
+// if (typeof window !== 'undefined') {
+// 	window.Chart = Chart;
+// }
 
 // DEPRECATIONS
 

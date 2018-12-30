@@ -1,6 +1,6 @@
 'use strict';
 
-var defaults = require('./core.defaults');
+var defaults = require('./defaults');
 
 defaults._set('global', {
 	responsive: true,
@@ -41,8 +41,6 @@ var Chart = function(item, config) {
 	return this;
 };
 
-Chart.Chart = Chart;
-
-// return Chart;
+// Chart.Chart = Chart;
 
 module.exports = Chart
