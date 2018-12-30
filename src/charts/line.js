@@ -1,11 +1,9 @@
 'use strict';
+var Chart = require('./chart')
+function Line(context, config) {
+	config.type = 'line';
 
-module.exports = function(Chart) {
+	return new Chart(context, config);
+}
 
-	Chart.Line = function(context, config) {
-		config.type = 'line';
-
-		return new Chart(context, config);
-	};
-
-};
+export default Line

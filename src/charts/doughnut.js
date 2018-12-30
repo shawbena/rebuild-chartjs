@@ -1,11 +1,11 @@
 'use strict';
 
-module.exports = function(Chart) {
+var Chart = require('./chart')
 
-	Chart.Doughnut = function(context, config) {
-		config.type = 'doughnut';
+function Doughnut(context, config) {
+	config.type = 'doughnut';
 
-		return new Chart(context, config);
-	};
+	return new Chart(context, config);
+}
 
-};
+export default Doughnut

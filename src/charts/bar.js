@@ -1,11 +1,10 @@
 'use strict';
 
-module.exports = function(Chart) {
+var Chart = require('./chart')
+function Bar(context, config) {
+	config.type = 'bar';
 
-	Chart.Bar = function(context, config) {
-		config.type = 'bar';
+	return new Chart(context, config);
+}
 
-		return new Chart(context, config);
-	};
-
-};
+export default Bar

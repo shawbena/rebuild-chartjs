@@ -1,11 +1,9 @@
 'use strict';
+var Chart = require('./chart')
+function Radar(context, config) {
+	config.type = 'radar';
 
-module.exports = function(Chart) {
+	return new Chart(context, config);
+}
 
-	Chart.Radar = function(context, config) {
-		config.type = 'radar';
-
-		return new Chart(context, config);
-	};
-
-};
+export default Radar

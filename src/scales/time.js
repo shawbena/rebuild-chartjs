@@ -426,7 +426,7 @@ function determineLabelFormat(data, timeOpts) {
 	return 'MMM D, YYYY';
 }
 
-module.exports = function() {
+// module.exports = function() {
 
 	var defaultConfig = {
 		position: 'bottom',
@@ -782,4 +782,4 @@ module.exports = function() {
 	});
 
 	scaleService.registerScaleType('time', TimeScale, defaultConfig);
-};
+// };
